@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with databases (MySql) - Practice Exercises</title>
+  </head>
+  <body class="iPhone">
+    <span id = "product"></span>
+    <h1>Add Products</h1>
+    <form action="http://localhost:5000/addiphones" method="post">
+      <!-- <label for="product_Id">productId</label><br/> -->
+      <!-- <input type="text" name="product_Id" id="#"><br><br/> -->
+      <label for="product_url">product Url</label><br />
+      <input type="text" name="product_url" id="#" /><br /><br />
+      <label for="product_name">product name</label><br />
+      <input type="text" name="product_name" required id="#" /><br /><br />
+      <label for="product_description">product Ddescription</label><br />
+      <input type="text" name="product_description" id="#" /><br /><br />
+      <label for="product_image">product Image</label><br />
+      <input type="text" name="product_image" id="#" /><br /><br />
+      <label for="product_link">product link</label><br />
+      <input type="text" name="product_link" id="#" /><br /><br />
+      <label for="starting_price">starting price</label><br />
+      <input type="text" name="starting_price" id="#" /><br /><br />
+      <label for="price_Range">price Range</label><br />
+      <input type="text" name="price_Range" id="#" /><br /><br />
+      <label for="user_name">user name</label><br/>
+      <input type="text" name="user_name" required id="#"><br><br/>
+      <label for="user_Password">user Password</label><br>
+      <input type="text" name="user_Password" required id=""><br><br/>
+      <!-- <label for="user_Id">userId</label><br>
+      <input type="text" name="user_Id" id="#"><br><br/> -->
+      <label for="product_brief_description">brief Description</label><br />
+      <textarea name="briefDescription" cols="30" rows="10"></textarea><br /><br />
+       <button type="submit">Add Product</button>
+      <!-- <input type="submit" value="add product" /> -->
+    </form>
+  </body>
+</html>
