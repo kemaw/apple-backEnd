@@ -10,20 +10,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // console.log(express);
-
-// app.get("/products/:id", function (req, res, next) {
-//   res.json({ msg: "This is CORS-enabled for all origins!" });
-// });
-
-// app.listen(80, function () {
-//   console.log("CORS-enabled web server listening on port 80");
-// });
 let mysqlConnection = mysql.createConnection({
-  host: "localhost",
-  user: "myDBuser",
-  password: "myDBuser",
-  database: "mydbuser",
-  // port: "3307",
+  host: process.env.DB_HOST,
+  user: process.env.DB_UUSER,
+  password: process.env.DB_PWD,
+  database: process.env.DB_NAME,
+  
 });
 mysqlConnection.connect((err) => {
   if (err) console.log(err);
